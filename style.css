@@ -16,43 +16,29 @@ body {
     overflow:auto;
 }
 
-.satu,
-.dua,
-.tiga,
-.empat,
-.lima,
-.enam  {
+.thumb {
     width : 200px;
     float: left;
     border: 2px solid #ffffff;
     box-sizing: border-box;
 }
 
-.satu:hover {
+.thumb:hover {
     opacity: 0.5;
     cursor: pointer;
 }
 
-.dua:hover {
-    opacity: 0.5;
-    cursor: pointer;
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
 
-.tiga:hover {
-    opacity: 0.5;
-    cursor: pointer;
+.fade {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
 }
 
-.empat:hover {
+.active {
     opacity: 0.5;
-    cursor: pointer;
-}
-
-.lima:hover {
-    opacity: 0.5;
-    cursor: pointer;
-}
-.enam:hover {
-    opacity: 0.5;
-    cursor: pointer;
 }
